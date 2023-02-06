@@ -57,8 +57,6 @@ img {
 
 .container {
   max-width: 1200px;
-  padding-left: 120px;
-  padding-right: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -70,22 +68,56 @@ img {
 
 .header-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .header-nav {
   display: flex;
-  margin-right: 196px;
+  align-items: center;
 }
 
 .menu {
   display: flex;
+  margin-left: 158px;
+  font-family: Red Hat Text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.item-menu:not(:last-child) {
+  margin-right: 42px;
 }
 
 .logo {
   width: 30px;
   height: 30px;
   fill: #ffffff;
+  margin-right: 6px;
+}
+
+.logo-text {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-family: Magra;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  cursor: pointer;
+}
+
+.btn-login {
+  min-width: 103px;
+  height: 41px;
+  color: #ffffff;
+  border: none;
+  background: #0d606f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  cursor: pointer;
 }
